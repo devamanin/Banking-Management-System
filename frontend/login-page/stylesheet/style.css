@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    color: #4E4E54;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.i-container{
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    z-index: -10;
+}
+.login-in-container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+    justify-content: center;
+}
+.login-in-container span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+.login-in-container .in-box{
+    display: flex;
+    gap: 11px;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    margin-top: 40px;
+}
+.login-in-container .in-box .iconify{
+    margin-left: 20px;
+}
+.login-in-container .in-box .username-in{
+    background: rgba(218, 217, 236, 0.47);
+    border-radius: 11px;
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.login-in-container .in-box .username-in .icon-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-in-container .in-box .username-in #username{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    margin-left: 30px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #4E4E54;
+    width: 80%;
+}
+.login-in-container .in-box .username-in #username::placeholder{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #4E4E54;
+
+}
+.login-in-container .in-box .password-in{
+    background: rgba(218, 217, 236, 0.47);
+    border-radius: 11px;
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.login-in-container .in-box .password-in .icon-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-in-container .in-box .password-in #password{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 80%;
+    margin-left: 30px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #4E4E54;
+}
+.login-in-container .in-box .password-in #password::placeholder{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #4E4E54;
+}
+
+.login-in-container .in-box .password-reset-link{
+    margin-top: 10px;
+}
+.login-in-container .in-box .password-reset-link span{
+    font-weight: 500;
+    font-size: 19px;
+}
+.login-in-container .in-box .login-but-cont button{
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    width: 140px;
+    height: 62px;
+    background-color: #6961dd;
+    margin-top: 40px;
+}
+.login-in-container .in-box .login-but-cont button:hover{
+    background-color: #5148D8;
+}
+.login-in-container .in-box .login-but-cont button:active{
+    background-color: #6961dd;
+}
+.login-in-container .in-box .login-but-cont button span{
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+.i-container{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.i-bank{
+    float: right;
+    width: 700px;
+    height: 500px;
+}
