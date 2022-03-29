@@ -1,0 +1,162 @@
+body
+{
+    font-family:arial;  overflow:hidden;
+    background: linear-gradient(to right, #2b5876, #4e4376);
+}
+#Container
+{
+    position:relative;
+    top:15px;left:28px;
+    height:96%;width:96%;
+     background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    
+    border-radius:20px ;
+
+}
+a
+{
+    display:block;
+    padding:0 15px;
+    color:rgb(139, 139, 139);
+    text-decoration: none;
+    Line-height:60px;
+    font-size:24px;
+    height:50px;width:60px;position: relative;left:20px;
+}
+
+.Logo{
+    position:relative;right:260px;top:20px
+
+}
+.Logo a{
+    display:block;
+    padding:0 15px;
+    color:rgb(76, 63, 146);
+    text-decoration: none;
+    Line-height:60px;
+    font-size:24px;
+}
+.Logo:hover
+{
+    transform:scale(1.1);
+}
+a:hover{color:rgb(92, 157, 211);}
+.DivLeft nav ul a:active{color:rgb(92, 157, 211);}
+
+div div nav ul
+{ 
+    display:flex;padding:0 15px;
+    align-items: center;
+    justify-content: center;
+}
+div div nav ul li form
+{ 
+    position:relative;display:flex;
+    height:30px ;background: white; 
+    align-items: center;
+    box-shadow: 0 10px 15px rgba(131, 131, 131, 0.1);
+   
+   
+}
+
+div div nav ul
+{
+    display: flex;margin:0 auto;padding:0;
+    position:relative;
+    height:60px;width:100%;
+    background-color: white;
+    align-items:center;justify-content: center;
+    border-radius:20px 20px 0px 0px;
+}
+#Search{
+    position:relative;top:7px;
+    width:360px;padding:8px;
+    border:1px solid black;
+    border-radius:20px;
+}
+div div nav ul li{ margin:30px;}
+div div nav ul li form{position :relative;align-items: center;}
+
+i{
+    transition:0.5s;transition-property:color,transform;}
+ li{list-style: none;}
+
+
+.Pro{position:relative;
+    left:310px;
+}
+
+
+
+.DivLeft{
+    position:relative;
+    height:617px;width:60px;background-color: rgb(255, 255, 255);
+    float:left;z-index:10;
+    border:0px solid black;border-radius:0 0 0 20px;
+}
+#Items
+{
+    position:relative;top:250px;top:250px;
+    display:flex;float:left;flex-direction:column;
+    
+}
+
+.uldrop
+{
+    display:none;
+    height:60px;width:100px;
+    background-color: red;position: relative;left:100px;
+}
+span:hover>.uldrop{display: block;}
+ul li div a{max-height:200px;max-width: 200px;}
+#Exit
+{
+    position: relative;
+    top:50px;
+}
+/* li:hover>.DivLeft nav ul ul{display:block;} */
+
+
+.Divider
+{
+    position:relative;top:10px;
+    border-top:1px solid rgb(161, 161, 161);width:60px;
+    border-radius:5px;
+}
+ #SubContainerUp
+{
+
+    height:295px;width:960px;position:relative;left:68.5px;right:300px;top:8.5px;
+    background:rgb(255, 255, 255);
+    border:0px ;border-radius:20px;
+}
+#SubContainerDown
+{
+    position:relative;left:68.5px;right:300px;top:17px;
+    height:295.5px;width:960px;
+    background:rgb(255, 255, 255);
+    border:0px ;border-radius:20px;
+}
+#SubContainerRight
+{
+    position:relative;right:8.5px;bottom:584px;
+    float:right;
+    height:600px;width:396px;
+    background:rgb(255, 255, 255);
+    border:0px ;border-radius:20px;
+} 
+ #Card
+{
+    position:relative;
+    top:15px;left:32px;
+    height:200px;width:330;
+    border-radius:20px;
+    background: linear-gradient(to right, #3a6186, #89253e); */
+}
+.Circle
+{
+    /* height:200px;width:200px;
+    background-color: red;
+    margin:2x;
+    border-radius:50%; */
+}
