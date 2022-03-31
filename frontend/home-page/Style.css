@@ -1,7 +1,9 @@
 body
 {
     font-family:arial;  overflow:hidden;
-    background: linear-gradient(to right, #2b5876, #4e4376);
+    background-color: white;
+    margin: 0;
+    padding: 0;
 }
 #Container
 {
@@ -12,6 +14,11 @@ body
     
     border-radius:20px ;
 
+}
+#rounded-interior
+{
+    height:900px;width:1600px;
+    background-color: red;
 }
 a
 {
@@ -66,7 +73,7 @@ div div nav ul
     height:60px;width:100%;
     background-color: white;
     align-items:center;justify-content: center;
-    border-radius:20px 20px 0px 0px;
+    
 }
 #Search{
     position:relative;top:7px;
@@ -90,9 +97,9 @@ i{
 
 .DivLeft{
     position:relative;
-    height:617px;width:60px;background-color: rgb(255, 255, 255);
+    height:100%;width:60px;background-color: rgb(255, 255, 255);
     float:left;z-index:10;
-    border:0px solid black;border-radius:0 0 0 20px;
+    border:0px solid black;
 }
 #Items
 {
@@ -103,7 +110,7 @@ i{
 
 .uldrop
 {
-    display:list-item;
+    display:none;
     height:60px;width:100px;
     background-color: red;position: relative;left:100px;
 }
@@ -126,22 +133,22 @@ ul li div a{max-height:200px;max-width: 200px;}
  #SubContainerUp
 {
 
-    height:295px;width:960px;position:relative;left:68.5px;right:300px;top:8.5px;
+    height:295px;width:1000px;position:relative;left:90px;right:300px;top:28.5px;
     background:rgb(255, 255, 255);
-    border:0px ;border-radius:20px;
+    border:0px ;border-radius: 20px;
 }
 #SubContainerDown
 {
-    position:relative;left:68.5px;right:300px;top:17px;
-    height:295.5px;width:960px;
+    position:relative;left:90px;right:250px;top:57px;
+    height:295px;width:1000px;
     background:rgb(255, 255, 255);
     border:0px ;border-radius:20px;
 }
 #SubContainerRight
 {
-    position:relative;right:8.5px;bottom:584px;
+    position:relative;bottom: 562px;right:8.5px;
     float:right;
-    height:600px;width:396px;
+    height:618px;width:396px;
     background:rgb(255, 255, 255);
     border:0px ;border-radius:20px;
 } 
