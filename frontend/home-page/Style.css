@@ -26,13 +26,19 @@ a
     padding:0 15px;
     color:rgb(139, 139, 139);
     text-decoration: none;
-    Line-height:60px;
     font-size:24px;
     height:50px;width:60px;position: relative;left:20px;
 }
 
+.inline
+{
+    position: relative;z-index:9;
+    top:10px;
+}
+
 .Logo{
-    position:relative;right:260px;top:20px
+    position:relative;
+    right:260px;top:20px
 
 }
 .Logo a{
@@ -76,8 +82,10 @@ div div nav ul
     
 }
 #Search{
-    position:relative;top:7px;
-    width:360px;padding:8px;
+    position:relative;
+    top:7px;
+    width:360px;
+    padding:8px;
     border:1px solid black;
     border-radius:20px;
 }
@@ -103,8 +111,10 @@ i{
 }
 #Items
 {
-    position:relative;top:250px;top:250px;
+    position:relative;
+    height:100%;
     display:flex;float:left;flex-direction:column;
+    background-color: rgb(255, 255, 255);
     
 }
 
@@ -122,7 +132,6 @@ ul li div a{max-height:200px;max-width: 200px;}
     top:50px;
 }
 /* li:hover>.DivLeft nav ul ul{display:block;} */
-
 
 .Divider
 {
