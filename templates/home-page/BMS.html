@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Welcome to our Bank</title>
+        <script src="https://kit.fontawesome.com/4014437da4.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{{url_for('static', filename = 'home-page/stylesheet/Style.css')}}">
+   
+   
+    </head>
+
+
+
+    <body >
+
+
+
+
+
+        <div id="Container" >
+            <div class="DivTop">
+                <nav class="NavH">
+                    
+                   
+                    <ul>
+                        <div id="Logo"class="Logo inline" ><a href="#home"><i class="fa-solid fa-dollar-sign"></i></a></div>
+                        <li><form ><input id="Search" class="inline"type="search" placeholder="Search"></form></li>
+                        <li><a href="#notif" ><i class="fa-solid fa-bell inline"></i></a></li>
+                        <li><div ><a href="#profile"><i  class="fa-solid fa-user Pro inline"></i></a></div></li>
+                        <li><a id="Pro"class="Pro inline"href="#profile">Profile</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+
+
+            <div class="DivLeft">
+                <nav class="NavV">
+                    <div id="Items">
+                       <a href=""class="inline1"><i class="fa-solid fa-house "></i></a>
+                       <span>
+                            <a id="Drop"class="inline1" href=""><i class="fa-solid fa-receipt "></i></a>
+                        </span>
+                            
+                            <div class="uldrop">
+                                <a href="">Balance Enquiry</a>
+                                <!-- <a href="">Account Statement</a> -->
+                            </div>
+                        
+                           <span> <a href=""class="inline1"><i class="fa-solid fa-hand-holding-dollar "></i></a></span>
+                        <div class="uldrop">
+                                <a  href="">FD opening</a>
+                                <!-- <a  href="">Deposit calculator</a>
+                                <a  href="">RD opening</a>
+                                <a  href="">Deposit closure request</a> -->
+                            </div>
+                     
+                        <hr class="Divider">
+                        <form action="/logout" id="logout-f">
+                            <a id="Exit" class="inline1"><i class="fa-solid fa-door-open "></i></a>
+                        </form>
+                        </div>
+                </nav>
+            </div>
+            <div id="SubContainerUp">
+                Transactions
+            </div>
+            <div id="SubContainerDown">
+                Analytics
+            </div>
+            <div id="SubContainerRight">
+
+                <div id="Card">
+
+
+                  
+                </div>
+                <span class="Circle"id="1"></span>
+                <span class="Circle"id="2"></span>
+
+            </div>
+
+
+            
+
+
+
+
+
+
+
+        <!-- </div> -->
+        </div>
+        <script src="{{url_for('static', filename='home-page/javascript/script.js')}}"></script>
+    </body>
+</html>
