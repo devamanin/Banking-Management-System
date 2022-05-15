@@ -1,95 +1,55 @@
-<html>
-    <head>
-        <title>Welcome to our Bank</title>
-        <script src="https://kit.fontawesome.com/4014437da4.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="{{url_for('static', filename = 'home-page/stylesheet/Style.css')}}">
-   
-   
-    </head>
-
-
-
-    <body >
-
-
-
-
-
-        <div id="Container" >
-            <div class="DivTop">
-                <nav class="NavH">
-                    
-                   
-                    <ul>
-                        <div id="Logo"class="Logo inline" ><a href="#home"><i class="fa-solid fa-dollar-sign"></i></a></div>
-                        <li><form ><input id="Search" class="inline"type="search" placeholder="Search"></form></li>
-                        <li><a href="#notif" ><i class="fa-solid fa-bell inline"></i></a></li>
-                        <li><div ><a href="#profile"><i  class="fa-solid fa-user Pro inline"></i></a></div></li>
-                        <li><a id="Pro"class="Pro inline"href="#profile">Profile</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-
-
-
-            <div class="DivLeft">
-                <nav class="NavV">
-                    <div id="Items">
-                       <a href=""class="inline1"><i class="fa-solid fa-house "></i></a>
-                       <span>
-                            <a id="Drop"class="inline1" href=""><i class="fa-solid fa-receipt "></i></a>
-                        </span>
-                            
-                            <div class="uldrop">
-                                <a href="">Balance Enquiry</a>
-                                <!-- <a href="">Account Statement</a> -->
-                            </div>
-                        
-                           <span> <a href=""class="inline1"><i class="fa-solid fa-hand-holding-dollar "></i></a></span>
-                        <div class="uldrop">
-                                <a  href="">FD opening</a>
-                                <!-- <a  href="">Deposit calculator</a>
-                                <a  href="">RD opening</a>
-                                <a  href="">Deposit closure request</a> -->
-                            </div>
-                     
-                        <hr class="Divider">
-                        <form action="/logout" id="logout-f">
-                            <a id="Exit" class="inline1"><i class="fa-solid fa-door-open "></i></a>
-                        </form>
-                        </div>
-                </nav>
-            </div>
-            <div id="SubContainerUp">
-                Transactions
-            </div>
-            <div id="SubContainerDown">
-                Analytics
-            </div>
-            <div id="SubContainerRight">
-
-                <div id="Card">
-
-
-                  
-                </div>
-                <span class="Circle"id="1"></span>
-                <span class="Circle"id="2"></span>
-
-            </div>
-
-
-            
-
-
-
-
-
-
-
-        <!-- </div> -->
-        </div>
-        <script src="{{url_for('static', filename='home-page/javascript/script.js')}}"></script>
-    </body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+<div class="welcome-message">
+    <span>Hi! {{loggedUsrDetails[0]}}. You last logged in at {{loggedUsrDetails[4]}} with IP {{loggedUsrDetails[3]}}</span>
+</div>
+<div class="operat-list">
+    <span class="title">Operative Accounts</span>
+    <div class="table-container">
+        <table>
+            <tr style="background-color: rgb(220, 239, 255);">
+                <th>Account Number</th>
+                <th>Account Type</th>
+                <th>Status</th>
+                <th>Balance</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>{{loggedUsrDetails[1]}}</td>
+                <td>Savings</td>
+                <td>Active</td>
+                <td>INR {{loggedUsrDetails[2]}}</td>
+                <td>Actions</td>
+            </tr>
+        </table>
+    </div>
+    <div class="details-down">
+        <label for="export"><b>Export</b></label>
+        <select name="export" id="export" style="width: 72px; padding: 5px; margin-left: 7.5px;">
+            <option value="pdf">Pdf</option>
+            <option value="txt">Txt</option>
+            <option value="xls">Xls</option>
+        </select>
+        <span style="margin-left: 10px; font-size: 25px;"><i class="fa-solid fa-download" style="font-size: 25px;"></i></span>
+    </div>
+</div>
+<div class="cards-list">
+    <span class="title">Cards</span>
+    <div class="table-container">
+        <table>
+            <tr style="background-color: rgb(220, 239, 255);">
+                <th>Card No</th>
+                <th>Card Type</th>
+                <th>Expiry Date</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>75740201.....</td>
+                <td>Debit</td>
+                <td>11/04/2022</td>
+                <td>Active</td>
+            </tr>
+        </table>
+    </div>
+</div>
+{% endblock %}

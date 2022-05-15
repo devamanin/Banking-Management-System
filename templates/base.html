@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Welcome to our Bank</title>
+        <script src="https://kit.fontawesome.com/4014437da4.js" crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" href="{{url_for('static', filename = 'home-page/stylesheet/Style.css')}}"> -->
+        <link rel="stylesheet" href="{{url_for('static', filename = 'home-page/stylesheet/Style.css')}}">
+    </head>
+    <body >
+        <div class="nav-bar">
+            <div class="b-fix-h" style="position: absolute;width: 90px;height: 60px;background-color: white;z-index: 10;"></div>
+            <div class="nav-h">
+                <div class="nav-cont">
+                    <span class="notifications"><i class="fa-solid fa-bell inline"></i>
+                        <span class="notification-container">
+                            <!-- <span>Hello World</span> -->
+                        </span>
+                    </span>
+                    <span class="usr-profile" style="margin-right: 40px;"><i class="fa-solid fa-user Pro inline"></i>
+                        <div class="usr-profile-container">
+                            <div class="but-container">
+                                <span class="profile-but">Profile</span>
+                                <span class="pass-change-but">Password Change</span>
+                                <span class="set-rights">Set Rights</span>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="nav-v">
+                <div class="nav-cont">
+                    <div class="home"><i class="fa-solid fa-house"></i></div>
+                    <div class="receipt"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                </div>
+                <form action="./logout" id="logout-f"></form>
+                <div class="logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+            </div>
+        </div>
+        <div class="body-container">
+            <div class="container">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+        <!-- <div class="receipt-menu"></div> -->
+        <!-- <script src="{{url_for('static', filename='home-page/javascript/script.js')}}"></script> -->
+        <script src="{{url_for('static', filename='home-page/javascript/script.js')}}"></script>
+    </body>
+</html>

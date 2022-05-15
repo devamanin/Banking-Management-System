@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='tran-page/stylesheet/style.css')}}">
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+<div class="transfer-container">
+    <div class="title">
+        <span class="iconify" data-icon="ic:twotone-account-balance-wallet" style="color: #699bf7; width: 40px; height: 40px;"></span>
+        <span class="title-txt">Quick Transfer</span>
+    </div>
+    <div class="acc-input">
+        <form action="{{url_for('trnx')}}" method="post" id="trnx-form">
+            <input type="number" name="accno" id="accno" placeholder="Account No">
+            <input type="number" name="amount" id="amount" placeholder="Rs.">
+            <button class="tr-button"><span class="iconify" data-icon="ic:round-greater-than" style="color: #ccc; width: 34px; height: 34px;"></span></button>
+        </form>
+    </div>
+</div>
+<div class="trxhistory-container">
+    <div class="title">
+        <span class="iconify" data-icon="bx:history" style="color: #699bf7; width: 40px; height: 40px;"></span>
+        <span class="title-txt">Transaction History</span>
+    </div>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Transaction No</th>
+                <th>Amount</th>
+                <th>Type</th>
+            </tr>
+            {% for i in range(len) %}
+            <tr>
+                <td>{{trxDetails[i][3]}}</td>
+                <td>{{trxDetails[i][2]}}</td>
+                <td>{{trxDetails[i][4]}}</td>
+                <td>{{trxDetails[i][1]}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+    </div>
+</div>
+<script src="{{url_for('static', filename='tran-page/javascript/script.js')}}"></script>
+{% endblock %}

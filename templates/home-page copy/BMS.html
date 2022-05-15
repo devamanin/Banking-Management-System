@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Welcome to our Bank</title>
+        <script src="https://kit.fontawesome.com/4014437da4.js" crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" href="{{url_for('static', filename = 'home-page/stylesheet/Style.css')}}"> -->
+        <link rel="stylesheet" href="{{url_for('static', filename = 'home-page/stylesheet/Style.css')}}">
+    </head>
+    <body >
+        <div class="nav-bar">
+            <div class="b-fix-h" style="position: absolute;width: 90px;height: 60px;background-color: white;z-index: 10;"></div>
+            <div class="nav-h">
+                <div class="nav-cont">
+                    <span class="notifications"><i class="fa-solid fa-bell inline"></i>
+                        <span class="notification-container">
+                            <!-- <span>Hello World</span> -->
+                        </span>
+                    </span>
+                    <span class="usr-profile" style="margin-right: 40px;"><i class="fa-solid fa-user Pro inline"></i>
+                        <div class="usr-profile-container">
+                            <div class="but-container">
+                                <span class="profile-but">Profile</span>
+                                <span class="pass-change-but">Password Change</span>
+                                <span class="set-rights">Set Rights</span>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="nav-v">
+                <div class="nav-cont">
+                    <div class="home"><i class="fa-solid fa-house"></i></div>
+                    <div class="receipt"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                </div>
+                <form action="./logout" id="logout-f"></form>
+                <div class="logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+            </div>
+        </div>
+        <div class="body-container">
+            <div class="container">
+                <div class="welcome-message">
+                    <span>Hi! {{loggedUsrDetails[0]}}. You last logged in at {{loggedUsrDetails[4]}} with IP {{loggedUsrDetails[3]}}</span>
+                </div>
+                <div class="operat-list">
+                    <span class="title">Operative Accounts</span>
+                    <div class="table-container">
+                        <table>
+                            <tr style="background-color: rgb(220, 239, 255);">
+                                <th>Account Number</th>
+                                <th>Account Type</th>
+                                <th>Status</th>
+                                <th>Balance</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>{{loggedUsrDetails[1]}}</td>
+                                <td>Savings</td>
+                                <td>Active</td>
+                                <td>INR {{loggedUsrDetails[2]}}</td>
+                                <td>Actions</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-down">
+                        <label for="export"><b>Export</b></label>
+                        <select name="export" id="export" style="width: 72px; padding: 5px; margin-left: 7.5px;">
+                            <option value="pdf">Pdf</option>
+                            <option value="txt">Txt</option>
+                            <option value="xls">Xls</option>
+                        </select>
+                        <span style="margin-left: 10px; font-size: 25px;"><i class="fa-solid fa-download" style="font-size: 25px;"></i></span>
+                    </div>
+                </div>
+                <div class="cards-list">
+                    <span class="title">Cards</span>
+                    <div class="table-container">
+                        <table>
+                            <tr style="background-color: rgb(220, 239, 255);">
+                                <th>Card No</th>
+                                <th>Card Type</th>
+                                <th>Expiry Date</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>75740201.....</td>
+                                <td>Debit</td>
+                                <td>11/04/2022</td>
+                                <td>Active</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="receipt-menu"></div> -->
+        <!-- <script src="{{url_for('static', filename='home-page/javascript/script.js')}}"></script> -->
+        <script src="{{url_for('static', filename='home-page/javascript/script.js')}}"></script>
+    </body>
+</html>
